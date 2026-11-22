@@ -9,8 +9,9 @@
 typedef struct SdkFunction { const char* name; const char* module; uint32_t rva; const char* code; int hook; } SdkFunction;
 #include "sdk_functions.h"
 
-#define FN_MAX 512
 #define FN_PLAN_MAX 32
+/* Sized from the table: a fixed cap silently dropped the generated table's last mapped functions once it grew. */
+#define FN_MAX ((int)(sizeof kSdkFunctions / sizeof kSdkFunctions[0]) + FN_PLAN_MAX)
 #define FN_HOOKS_MAX 256
 #define FN_WAIT_MS 60000
 
