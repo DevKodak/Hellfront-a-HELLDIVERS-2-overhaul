@@ -136,6 +136,16 @@
    "stride": 152,
    "type": 1433400971
   },
+  "EquipmentComponentData": {
+   "offset": 26017296,
+   "header": "25a857534c444c440100000025a85753a86301000100000000000000",
+   "index": 233,
+   "indices": 688,
+   "records": 345,
+   "recordOffset": 11008,
+   "stride": 232,
+   "type": 1398253605
+  },
   "ExplosiveComponentData": {
    "offset": 27298048,
    "header": "8c9bcff54c444c44010000008c9bcff5206e00000100000000000000",

@@ -83,6 +83,11 @@ EXTRA = {
     'StatusEffectReceiverComponentData': {'offset': 30174472, 'header': '33c262604c444c440100000033c26260a840e7000100000000000000',
                                           'index': 307, 'indices': 648, 'records': 325, 'record_offset': 10368, 'stride': 46600,
                                           'type': 1617084979},
+    # The same way, read from the running game: HfEquipment's fields (allow_wield_on_ship among them) need its table.
+    # Its one LDLD frame in the region; shape as native/mod-loader/component_sizes.h has it (91048 bytes).
+    'EquipmentComponentData': {'offset': 26017296, 'header': '25a857534c444c440100000025a85753a86301000100000000000000',
+                               'index': 233, 'indices': 688, 'records': 345, 'record_offset': 11008, 'stride': 232,
+                               'type': 1398253605},
     'LocomotionComponentData': {'offset': 45414912, 'header': '906707884c444c44010000009067078850900e000100000000000000', 'index': 311,
                                 'indices': 408, 'records': 205, 'record_offset': 6528, 'stride': 4624, 'type': 2282186640},
 }
